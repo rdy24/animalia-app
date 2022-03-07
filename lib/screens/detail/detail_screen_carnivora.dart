@@ -2,6 +2,7 @@ import 'package:animalia_app/components/carnivora_animals.dart';
 import 'package:animalia_app/constants.dart';
 import 'package:animalia_app/data/carnivora_data.dart';
 import 'package:animalia_app/components/title_for_animals.dart';
+import 'package:animalia_app/screens/detail/favorite_btn.dart';
 import 'package:flutter/material.dart';
  
 class DetailScreenCarnivora extends StatelessWidget {
@@ -24,6 +25,7 @@ class DetailScreenCarnivora extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         CircleAvatar(
                           backgroundColor: Colors.grey,
@@ -37,6 +39,7 @@ class DetailScreenCarnivora extends StatelessWidget {
                             },
                           ),
                         ),
+                        FavoriteButton(),
                       ],
                     ),
                   ),
